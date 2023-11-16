@@ -3,17 +3,14 @@
     margin-bottom: 20px;
     width:200px;
     justify-content:center;
-    /* background-color: blue; */
 }
 
 .BusinessCard > img{
-    /* background-color: green; */
     width: 200px;
     height: 200px;
 }
 
 .BusinessCardDetails{ 
-    /* background-color:blueviolet; */
     display: grid;
     grid-template-columns: 70% 30%;
 }
@@ -44,7 +41,6 @@
 }
 
 .BusinessCardRating{
-    /* color: orange; */
     font-weight: bold;
     font-size: 11px;
 }

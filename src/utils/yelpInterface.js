@@ -1,7 +1,6 @@
 // NOTE: To make this work, enable cors anywhere at https://cors-anywhere.herokuapp.com/corsdemo
 import apiSecrets from './yelpApiKey.js';
 
-
 const searchYelp = async (foodType, foodLocation, foodFilter) => {
 
     const foodTypeSearch = foodType;

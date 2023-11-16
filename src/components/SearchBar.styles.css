@@ -16,8 +16,6 @@
     justify-content: center;
     width: 550px;
     margin: 0 auto;
-    
-    
 }
 
 .Filters{ 
@@ -26,14 +24,12 @@
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: white;
-    /* background-color: yellow; */
     padding: 15px 0px;
     max-width: 750px;
     font-weight: 600;
 }
 
 .SearchInputs{
-    /* background-color: orange; */
     padding: 15px 0px;
 }
 
@@ -46,7 +42,6 @@
 }
 
 .SearchButtonArea{
-    /* background-color: pink; */
     padding: 15px 0px; 
 }
 

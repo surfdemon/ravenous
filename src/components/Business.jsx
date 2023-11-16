@@ -2,8 +2,6 @@ import React from 'react';
 import './Business.styles.css';
 
 function Business(props){ 
-    //Should display an image, name, address, city, 
-    //state, zipcode, category, rating, and review count
     return (
         <div className="BusinessCard">
             <img src={props.business.image_url} alt={props.business.image_url}/>
