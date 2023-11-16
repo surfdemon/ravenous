@@ -1,10 +1,23 @@
+.headerArea{
+    background-image: url('../media/cover-image.jpeg');    
+    padding-top: 230px;
+    width: 826px;
+    margin: 0 auto;
+    height: 386px;
+    margin-top: -75px;
+}
+
 .SearchBar{
-    background-color: blue;
+    background-color: rgba(114, 78, 44, 0.85);
     height:200px;
     display: grid;
     grid-template-rows: 33.33% 33.33% 33.33%; 
     align-items: center;
     justify-content: center;
+    width: 550px;
+    margin: 0 auto;
+    
+    
 }
 
 .Filters{ 
@@ -13,13 +26,14 @@
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: white;
-    background-color: yellow;
+    /* background-color: yellow; */
     padding: 15px 0px;
     max-width: 750px;
+    font-weight: 600;
 }
 
 .SearchInputs{
-    background-color: orange;
+    /* background-color: orange; */
     padding: 15px 0px;
 }
 
@@ -32,10 +46,23 @@
 }
 
 .SearchButtonArea{
-    background-color: pink;
+    /* background-color: pink; */
     padding: 15px 0px; 
 }
 
+.SearchButtonArea input{
+    border-radius: 20px;
+    padding: 5px 45px;
+    background-color: #8a9a5b;
+    border: 0px;
+}
+
+.SearchButtonArea input:hover{
+    background-color: #3E4F14;
+}
+
 .activeClass { 
-    background-color: green;
+    background-color: #8a9a5b;
+    border-radius: 20px; 
+    padding: 5px 10px;
 }

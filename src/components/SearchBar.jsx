@@ -42,27 +42,29 @@ function SearchBar(props){
     };
 
     return (
-        <div className="SearchBar">
-            <div className="Filters">
-                <div id="BestMatchSearch" 
-                    className={ foodFilter === "best_match" ? 'activeClass' : 'notActive'}
-                    onClick={() => foodFilterClickHandler('best_match')}
-                    >Best Match</div>   
-                <div id="HighestRatedSearch" 
-                    className={ foodFilter === "rating" ? 'activeClass' : 'notActive'}
-                    onClick={() => foodFilterClickHandler('rating')}
-                    >Highest Rated</div>    
-                <div id="MostReviewedSearch" 
-                    className={ foodFilter === "review_count" ? 'activeClass' : 'notActive'}
-                    onClick={() => foodFilterClickHandler('review_count')}
-                >Most Reviewed</div>
-            </div>
-            <div className="SearchInputs"> 
-                <input type="text" id="SearchByFoodTypeInput" onChange={(e) => foodTypeChangeHandler(e)}  placeholder={foodType} />
-                <input type="text" id="SearchByLocationInput" onChange={(e) => locationChangeHandler(e)} placeholder={foodLocation} />
-            </div>
-            <div className="SearchButtonArea">
-                <input type='button' value="Let's Go!" onClick={searchSubmitHandler} />
+        <div className="headerArea">
+            <div className="SearchBar">
+                <div className="Filters">
+                    <div id="BestMatchSearch" 
+                        className={ foodFilter === "best_match" ? 'activeClass' : 'notActive'}
+                        onClick={() => foodFilterClickHandler('best_match')}
+                        >Best Match</div>   
+                    <div id="HighestRatedSearch" 
+                        className={ foodFilter === "rating" ? 'activeClass' : 'notActive'}
+                        onClick={() => foodFilterClickHandler('rating')}
+                        >Highest Rated</div>    
+                    <div id="MostReviewedSearch" 
+                        className={ foodFilter === "review_count" ? 'activeClass' : 'notActive'}
+                        onClick={() => foodFilterClickHandler('review_count')}
+                    >Top Reviewed</div>
+                </div>
+                <div className="SearchInputs"> 
+                    <input type="text" id="SearchByFoodTypeInput" onChange={(e) => foodTypeChangeHandler(e)}  placeholder={foodType} />
+                    <input type="text" id="SearchByLocationInput" onChange={(e) => locationChangeHandler(e)} placeholder={foodLocation} />
+                </div>
+                <div className="SearchButtonArea">
+                    <input type='button' value="Search" onClick={searchSubmitHandler} />
+                </div>
             </div>
         </div>
     );

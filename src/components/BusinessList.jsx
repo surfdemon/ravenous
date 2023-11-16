@@ -7,7 +7,7 @@ function BusinessList(props) {
     console.log(businesses);
     console.log(props.businesses);
     if ( businesses !== undefined && businesses.length < 1){
-        return (<div><h1>No Businesses to show!</h1></div>)
+        return (<div className="BusinessListNoneFound"><h1>No Businesses to show!</h1></div>)
     } else {
         return (<div className="BusinessList">
             {businesses.map((business) => { return <Business 
